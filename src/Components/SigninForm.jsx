@@ -10,14 +10,14 @@ const SigninForm = () => {
         <span className="text-[16px]">Sign in to your account</span>
       </div>
       <div className="flex justify-between md:w-[37.6%] w-[385px] py-[20px]">
-        <div className="p-[8px] w-[47%] gap-[4px] rounded-[10px] bg-white flex justify-center items-center h-[25px]">
+        <div className="p-[8px] w-[47%] gap-[4px] rounded-[10px] bg-white flex justify-center items-center h-[27px]">
           <img src={Google} alt="Google" />
-          <span className="text-gray text-[13px] ">Sign in with Google</span>
+          <span className="text-gray text-xs ">Sign in with Google</span>
         </div>
 
         <div className="p-[8px] w-[47%] gap-[4px] rounded-[10px] bg-white flex justify-center items-center h-[25px]">
           <img src={Apple} alt="Google" />
-          <span className="text-gray text-[13px] ">Sign in with Apple</span>
+          <span className="text-gray text-xs ">Sign in with Apple</span>
         </div>
       </div>
       <div class="md:w-[37.6%] md:h-[36.8%] w-[385px]  rounded-[20px] bg-white flex flex-col px-[30px] py-[25px]">
@@ -29,6 +29,7 @@ const SigninForm = () => {
             className="px-[15px] w-full h-[35px] rounded-[10px] bg-backgroundColor outline-none caret-slate-400 hover:bg-inputHoverColor"
             type="email"
             name="email"
+            placeholder="Enter email address"
           />
         </div>
         <div className="pb-[10px] gap-[5px] flex flex-col">
@@ -39,6 +40,7 @@ const SigninForm = () => {
             className="px-[15px] w-full h-[35px] rounded-[10px] bg-backgroundColor outline-none caret-slate-400 hover:bg-inputHoverColor"
             type="password"
             name="password"
+            placeholder="Enter your password"
           />
         </div>
         <div className="pb-[10px]">
