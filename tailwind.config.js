@@ -9,8 +9,14 @@ module.exports = {
       zero: "0px",
     },
     extend: {
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
       colors: {
         backgroundColor: "#F5F5F5",
+        inputHoverColor: "#EAEAEA",
+        gray: "#858585",
+        link: "#346BD5"
       },
     },
   },

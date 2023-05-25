@@ -2,8 +2,8 @@ import React from 'react';
 
 const LeftBar = () => {
     return (
-        <div>
-            
+        <div className='bg-black h-full'>
+            leftbar
         </div>
     );
 }

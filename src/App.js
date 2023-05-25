@@ -1,10 +1,27 @@
-import './App.css';
+import Layout from './Pages/Layout';
+import SignIn from './Pages/SignIn';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
 
 function App() {
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout/>,
+  },
+  {
+    path: "/signin",
+    element: <SignIn/>,
+  },
+  
+]);
   return (
-    <div className="App">
-      
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
