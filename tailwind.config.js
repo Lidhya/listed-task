@@ -10,7 +10,12 @@ module.exports = {
         backgroundColor: "#F5F5F5",
         inputHoverColor: "#EAEAEA",
         gray: "#858585",
-        link: "#346BD5"
+        link: "#346BD5",
+        block1: "#DDEFE0",
+        block2: "#F4ECDD",
+        block3: "#EFDADA",
+        block4: "#DEE0EF",
+
       },
     },
   },
