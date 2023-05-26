@@ -50,8 +50,9 @@ const LeftBar = () => {
           <div
             className={data === selectedIcon ? `font-bold` : `font-normal`}
             onClick={() => handleIconClick(data)}
+            key={data.id}
           >
-            <Navigation data={data} key={data.id} />
+            <Navigation data={data}  />
           </div>
         ))}
       </div>

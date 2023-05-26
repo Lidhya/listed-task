@@ -20,7 +20,7 @@ const SigninForm = () => {
           <span className="text-gray text-xs font-montserrat ">Sign in with Apple</span>
         </div>
       </div>
-      <div class="md:w-[37.6%] md:h-[36.8%] w-[385px]  rounded-[20px] bg-white flex flex-col px-[30px] py-[25px]">
+      <div className="md:w-[37.6%] md:h-[36.8%] w-[385px]  rounded-[20px] bg-white flex flex-col px-[30px] py-[25px]">
         <div className="pb-[10px] gap-[5px] flex flex-col ">
           <label htmlFor="email" className="font-[400] font-lato">
             Email address

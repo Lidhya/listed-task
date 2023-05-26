@@ -19,7 +19,7 @@ ChartJS.register(
 
 const PieChart = () => {
   const chartData = {
-    labels: ["Label 1", "Label 2", "Label 3"],
+    labels: ["Basic Tees", "Custom Short Pants", "Super Hoodies"],
     datasets: [
       {
         data: [30, 50, 20],
