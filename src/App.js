@@ -1,32 +1,38 @@
+import { useState } from "react";
 import Layout from "./Pages/Layout";
 import SignIn from "./Pages/SignIn";
 import {
   createBrowserRouter,
-  RouterProvider,
   Navigate,
+  RouterProvider,
 } from "react-router-dom";
 
 function App() {
-  // const show = true;
-  // const ProtectedRoute = ({ children }) => {
-  //   if (show) {
-  //     return <Navigate to="/signin" />;
-  //   }
-  //   return children;
-  // };
+  const [show, setShow] = useState(false)
+
+  const ProtectedRoute = ({ children }) => {
+    if (!show) {
+      return <Navigate to="/signin" />;
+    }
+    return children;
+  };
+
+  const login=()=>{
+    setShow(true)
+  }
 
   const router = createBrowserRouter([
     {
       path: "/",
       element: (
-        // <ProtectedRoute>
+        <ProtectedRoute>
           <Layout />
-        // </ProtectedRoute>
+        </ProtectedRoute>
       ),
     },
     {
       path: "/signin",
-      element: <SignIn />,
+      element: <SignIn login={login}/>,
     },
   ]);
   return <RouterProvider router={router} />;

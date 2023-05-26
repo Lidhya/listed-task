@@ -1,7 +1,7 @@
 import React from "react";
 import SigninForm from "../Components/SigninForm";
 
-const SignIn = () => {
+const SignIn = ({login}) => {
   return (
     <div className="w-full flex h-screen items-center ">
       <div className="w-[40.8%] bg-black relative h-full hidden md:block">
@@ -10,7 +10,7 @@ const SignIn = () => {
         </span>
       </div>
       <div className="bg-backgroundColor h-full md:w-[59.2%] w-full flex flex-col justify-center items-center">
-        <SigninForm/>
+        <SigninForm login={login}/>
       </div>
     </div>
   );
