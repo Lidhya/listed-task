@@ -5,7 +5,7 @@ import user1 from "../assets/Images/image1.jpg";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between h-30px w-1000px bg-transparent">
+    <nav className="flex items-center justify-between h-30px w-1000px bg-transparent flex-wrap sm:flex-nowrap">
       <div className="text-black font-bold text-xl">Dashboard</div>
       <div className="flex items-center space-x-2 gap-5 ">
         <div className="flex items-center py-1 px-2 bg-white text-black rounded-[10px] text-sm">

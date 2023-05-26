@@ -7,22 +7,22 @@ const SigninForm = () => {
     <>
       <div className="flex flex-col justify-start items-start md:w-[37.6%] w-[385px]">
         <span className="font-bold font-montserrat text-3xl">Sign In</span>
-        <span className="text-[16px]">Sign in to your account</span>
+        <span className="text-[16px] font-lato">Sign in to your account</span>
       </div>
       <div className="flex justify-between md:w-[37.6%] w-[385px] py-[20px]">
         <div className="p-[8px] w-[47%] gap-[4px] rounded-[10px] bg-white flex justify-center items-center h-[27px]">
           <img src={Google} alt="Google" />
-          <span className="text-gray text-xs ">Sign in with Google</span>
+          <span className="text-gray text-xs font-montserrat">Sign in with Google</span>
         </div>
 
         <div className="p-[8px] w-[47%] gap-[4px] rounded-[10px] bg-white flex justify-center items-center h-[25px]">
           <img src={Apple} alt="Google" />
-          <span className="text-gray text-xs ">Sign in with Apple</span>
+          <span className="text-gray text-xs font-montserrat ">Sign in with Apple</span>
         </div>
       </div>
       <div class="md:w-[37.6%] md:h-[36.8%] w-[385px]  rounded-[20px] bg-white flex flex-col px-[30px] py-[25px]">
         <div className="pb-[10px] gap-[5px] flex flex-col ">
-          <label htmlFor="email" className="font-[400] font-[lato]">
+          <label htmlFor="email" className="font-[400] font-lato">
             Email address
           </label>
           <input
@@ -33,7 +33,7 @@ const SigninForm = () => {
           />
         </div>
         <div className="pb-[10px] gap-[5px] flex flex-col">
-          <label htmlFor="password" className="font-[400] font-[lato]">
+          <label htmlFor="password" className="font-[400] font-lato">
             Password
           </label>
           <input
