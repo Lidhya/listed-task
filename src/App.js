@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const blah = true;
+  // const show = true;
   // const ProtectedRoute = ({ children }) => {
-  //   if (blah) {
+  //   if (show) {
   //     return <Navigate to="/signin" />;
   //   }
   //   return children;
