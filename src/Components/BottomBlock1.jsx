@@ -15,7 +15,7 @@ const BottomBlock1 = () => {
             <img className="w-2 h-1" src={Dropdown} alt="Dropdown" />
           </div>
           </div>
-          <div>
+          <div className='flex p-3 h-[95%]'>
             <PieChart/>
           </div>
         </div>

@@ -40,12 +40,12 @@ const LineGraph = () => {
       legend: {
         position: "top",
         align: "end",
-        padding:"20px",
         labels: {
           usePointStyle: true,
           font: {
             size: 12,
           },
+          color: "#000",
         },
       },
     },
