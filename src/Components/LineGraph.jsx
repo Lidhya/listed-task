@@ -17,7 +17,6 @@ const LineGraph = () => {
   const [error, setError] = useState(false);
   const [users, setUsers] = useState([]);
   const [guests, setGuests] = useState([]);
-  const [pieChartData, setPieChartData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {

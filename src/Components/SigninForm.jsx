@@ -1,8 +1,10 @@
 import React from "react";
 import Apple from "../assets/svg/appleIcon.svg";
 import Google from "../assets/svg/googleIcon.svg";
+import { useNavigate } from "react-router-dom";
 
 const SigninForm = () => {
+  const navigate =useNavigate()
   return (
     <>
       <div className="flex flex-col justify-start items-start md:w-[37.6%] w-[385px]">
@@ -54,6 +56,7 @@ const SigninForm = () => {
             type="Submit"
             name="Submit"
             value={"Sign In"}
+            onClick={()=>navigate("/")}
           />
         </div>
       </div>
